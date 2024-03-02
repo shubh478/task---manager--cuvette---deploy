@@ -8,12 +8,12 @@ const usersRoute = require("./routes/usersRoute");
 const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 app.use(
-    cors({
-      origin: ["https://deploy-mern-1whq.vercel.app"],
-      methods: ["POST","GET"],
-      credentials:true
-    })
-  );
+  cors({
+    origin: ["https://task-manager-cuvette-deploy-b7m1.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use("/api/users", usersRoute);
 app.use("/api/board", boardRoutes);
