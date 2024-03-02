@@ -9,7 +9,7 @@ const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 app.use(
   cors({
-    origin: ["https://task-manager-cuvette-deploy-b7m1.vercel.app/"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true,
   })
